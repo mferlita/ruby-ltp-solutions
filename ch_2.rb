@@ -28,7 +28,7 @@ puts ''
 #problems
 puts 'PROBLEMS'
 =begin
-These don't work:
+These don't work very well:
   puts '12' + 12
   puts '2' * '5'
   puts 'Betty' + 12
