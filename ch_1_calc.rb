@@ -1,31 +1,31 @@
 # frozen_string_literal: false
 
-# introduction
-puts "introduction".upcase
-puts "1 + 2 = #{1 + 2}+"
+# introduction to puts
+puts "introduction to puts".upcase
+puts 1 + 2
 puts 3
 puts ""
 
 # floats
 puts "floats".upcase
-puts "1.0 + 2.0 = #{1.0 + 2.0}"
-puts "2.0 * 3.0 = #{2.0 * 3.0}"
-puts "5.0 - 8.0 = #{5.0 - 8.0}"
-puts "9.0 / 2.0 = #{9.0 / 2.0}"
+puts 1.0 + 2.0
+puts 2.0 * 3.0
+puts 5.0 - 8.0
+puts 9.0 / 2.0
 puts ""
 
 # integers
 puts "integers".upcase
-puts "1 + 2 = #{1 + 2}"
-puts "2 * 3 = #{2 * 3}"
-puts "5 - 8 = #{5 - 8}"
-puts "9 / 2 = #{9 / 2}"
+puts 1 + 2
+puts 2 * 3
+puts 5 - 8
+puts 9 / 2
 puts ""
 
 # complex expressions
 puts "complex expressions".upcase
-puts "5 * (12-8) + -15 = #{5 * (12-8) + -15}"
-puts "98 + (59872 / (13*8)) * -52 = #{98 + (59872 / (13*8)) * -52}"
+puts 5 * (12-8) + -15
+puts 98 + (59872 / (13*8)) * -52
 puts ""
 
 me_in_seconds = (((60 * 24) * 365) * (Time.new.year.to_i - 1992)) * 60
