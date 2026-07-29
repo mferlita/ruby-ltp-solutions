@@ -1,9 +1,9 @@
 # frozen_string_literal: false
 
 # variable assignment
-myString = '...you can say that again...'
-puts myString
-puts myString
+my_string = '...you can say that again...'
+puts my_string
+puts my_string
 puts ''
 
 # slightly more interesting variable assignment
