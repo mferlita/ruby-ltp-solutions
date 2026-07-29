@@ -1,0 +1,41 @@
+# frozen_string_literal: false
+
+# variable assignment
+myString = '...you can say that again...'
+puts myString
+puts myString
+puts ''
+
+# slightly more interesting variable assignment
+name = 'Patricia Rosanna Jessica Mildred Oppenheimer'
+puts 'My name is ' + name + '.'
+puts 'Wow!  ' + name + ' is a really long name!'
+puts ''
+
+# variable reassignment
+composer = 'Mozart'
+puts composer + ' was "da bomb", in his day.'
+
+composer = 'Beethoven'
+puts 'But I prefer ' + composer + ', personally.'
+puts''
+
+# # variables can point to any object, not just strings
+var = 'just another ' + 'string'
+puts var
+
+var = 5 * (1+2)
+puts var
+puts ''
+
+#  variables can point to just about anything except other variables.
+var1 = 8
+var2 = var1
+puts var1
+puts var2
+
+puts ''
+
+var1 = 'eight'
+puts var1
+puts var2
