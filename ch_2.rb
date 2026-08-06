@@ -1,43 +1,44 @@
 # frozen_string_literal: false
 
-# printing strings
-puts 'PRINTING STRINGS'
-puts 'Hello, world!'
-puts ''
-puts 'Good-bye.'
-puts ''
+puts "PRINTING STRINGS"
+puts "Hello, world!"
+puts ""
+puts "Good-bye."
+puts ""
 
-# string arithmetic
-puts 'STRING ARITHMETIC'
-puts 'I like' + 'apple pie.'
-puts 'I like ' + 'apple pie.'
-puts 'I like' + ' apple pie.'
-puts 'blink ' * 4
-puts ''
+puts "STRING ARITHMETIC"
+puts "I like" + "apple pie."
+puts "I like " + "apple pie."
+puts "I like" + " apple pie."
+puts "blink " * 4
+puts ""
 
-# 12 vs '12'
-puts "12 VS '12'"
+puts "Numbers vs. Digits".upcase
 puts  12  +  12
-puts '12' + '12'
-puts '12  +  12'
+puts "12" + "12"
+puts "12  +  12"
 puts  2  *  5
-puts '2' *  5
-puts '2  *  5'
-puts ''
+puts "2" *  5
+puts "2  *  5"
+puts ""
 
-#problems
-puts 'PROBLEMS'
+puts "When Bad Things Happen to Good Programs".upcase
 =begin
 These don't work very well:
-  puts '12' + 12
-  puts '2' * '5'
-  puts 'Betty' + 12
-  puts 'Fred' * 'John'
-  puts 'You're swell!'
+  puts "12" + 12
+  puts "2" * "5"
+  puts "Marceline" + 12
+  puts "Finn" * "Jake"
+  puts 11 * "Apollo"
+  puts "They said, "Yes!""
 =end
-puts '--Apostrophes and backslashes'
-puts 'You\'re swell!'
-puts 'backslash at the end of a string:  \\'
-puts 'up\\down'
-puts 'up\down'
-
+puts "--Apostrophes and backslashes"
+puts "They said, \"yes!\""
+puts "up\\down"
+puts "backslash at the end of a string:  \\"
+puts "Dip!"
+puts "\D\i\p\!"
+puts ""
+puts "--Some escape sequences"
+puts "Duck...\nDuck..."
+puts "\tGoose! (or grey duck for some of you!)"

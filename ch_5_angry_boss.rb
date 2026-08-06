@@ -1,5 +1,5 @@
 # frozen_string_literal: false
 
-puts 'What!?'
+puts "What!?"
 want = gets.chomp
-puts "Whaddya mean \'#{want}\'!? You\'re fired!"
+puts "Whaddya mean \"#{want}\"!? You\'re fired!"
