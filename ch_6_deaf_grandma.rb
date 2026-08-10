@@ -1,6 +1,5 @@
 # frozen_string_literal: false
 
-grandchild = ''
 bye_count = 0
 
 puts 'HELLO, DEARY!'

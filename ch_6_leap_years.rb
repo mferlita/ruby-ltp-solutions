@@ -1,8 +1,8 @@
 # frozen_string_literal: false
 
-puts 'Please enter a starting year.'
+puts 'Please enter a starting year (the earliest year in the range).'
 start_year = gets.to_i
-puts 'Please enter an ending year.'
+puts 'Please enter an ending year (the latest year in the range).'
 end_year = gets.to_i
 puts 'The leap years are:'
 
