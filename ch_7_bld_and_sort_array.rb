@@ -1,13 +1,26 @@
 # frozen_string_literal: false
 
-array = []
+# array = []
+#
+# loop do
+#   guest = gets.chomp
+#   if guest != ''
+#     array.push guest
+#   elsif guest == ''
+#     puts "This array contains: #{array.sort}"
+#     break
+#   end
+# end
 
-loop do
+puts "Give me some words and I'll sort them."
+words = []
+
+while true
   guest = gets.chomp
-  if guest != ''
-    array.push guest
-  elsif guest == ''
-    puts "This array contains: #{array.sort}"
-    break
-  end
+  break if guest.empty?
+  words.push(guest)
 end
+
+puts "Here you go: #{words.sort}"
+puts "Or:"
+puts words.sort
