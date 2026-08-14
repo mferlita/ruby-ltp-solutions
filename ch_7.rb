@@ -81,4 +81,5 @@ puts favorites.pop
 puts favorites
 puts favorites.length
 
-# Ch. 7 continued in ch_7_bld_and_sort_array.rb and ch_7_table_of_contents_revisted.rb
+# Ch. 7 continued in ch_7_bld_and_sort_array.rb, ch_7_make_a_list_no_sort.rb,
+# and ch_7_table_of_contents_redux.rb
