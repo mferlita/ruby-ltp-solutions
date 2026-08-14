@@ -1,15 +1,13 @@
 # frozen_string_literal: false
 
-list = []
-
-guest = ''
+array = []
 
 loop do
   guest = gets.chomp
   if guest != ''
-    list.push guest
+    array.push guest
   elsif guest == ''
-    puts "This list contains: #{list.sort}"
+    puts "This array contains: #{array.sort}"
     break
   end
 end
