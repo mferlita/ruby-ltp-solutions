@@ -14,7 +14,7 @@
 #   end
 # end
 
-puts "Give some words and I'll make a list for you."
+puts "Give me some words and I'll make a list for you."
 words = []
 list = []
 
