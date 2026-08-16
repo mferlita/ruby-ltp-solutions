@@ -169,4 +169,4 @@ puts
 puts "And the Ultimate Flavor Championship is:"
 puts winner.upcase+"!!"
 
-# Ch. 8 is continued in ch_8_more_flavors_comp.rb, ch_8_old_roman_num.rb, and ch_8_new_roman_num.rb
+# Ch. 8 is continued in ch_8_more_flav_comp.rb, ch_8_old_roman_num.rb, and ch_8_new_roman_num.rb
