@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-# NOTE: match_A_B means "round A, match B"
+# note: match_A_B means "round A, match B"
 match_1_1 = ["vanilla", "chocolate"]
 match_1_2 = ["rhubarb", "pistachio"]
 match_1_3 = ["spumoni", "green tea"]

@@ -79,7 +79,7 @@
 # end
 # double_this(44)
 
-# This will not work. It throws an error.
+# This will not work
 # puts num_times_2.to_s
 
 # tough_var = "You can't even touch my variable!"
@@ -93,19 +93,19 @@
 # puts tough_var
 
 # Return Variables: What Comes Out
-# return_val = puts "This puts returned:"
-# puts return_val
+# return_value = puts "This puts returned:"
+# puts return_value
 
 # puts say_moo(3)
 
-def say_moo(number_of_moos)
-  puts 'mooooooo...' * number_of_moos
-  'yellow submarine'
-end
-
-x = say_moo(3)
-puts "#{x.capitalize}, dude..."
-puts "#{x}."
+# def say_moo(number_of_moos)
+#   puts "mooooooo..."*number_of_moos
+#   "yellow submarine"
+# end
+#
+# x = say_moo(3)
+# puts x.capitalize + ", dude..."
+# puts x + "."
 
 # def favorite_food(name)
 #   if name == "Lister"
@@ -115,7 +115,7 @@ puts "#{x}."
 #   if name == "Rimmer"
 #     return "mashed potatoes"
 #   end
-#   "hard to say... maybe fried plantain?"
+#   "hard to say... maybe fried plaintain?"
 # end
 #
 # def favorite_drink(name)
@@ -136,38 +136,37 @@ puts "#{x}."
 # puts favorite_drink("Jean-Luc")
 
 # Flavor Tournament Redux
-# match_1 = ["vanilla", "chocolate"]
-# match_2 = ["rhubarb", "pistachio"]
-# match_3 = [] # this will hold the winners from 1 & 2
-# winner = nil # this will hold the final winner
-#
-# def ask_for_winner(flavors)
-#   puts "0. "+flavors[0]
-#   puts "1. "+flavors[1]
-#
-#   while true
-#     answer = gets.chomp.downcase
-#     if (answer == "0" || answer == "1")
-#       return flavors[answer.to_i]
-#     else puts "Please and '0' or '1'."
-#     end
-#   end
-# end
-#
-# puts "Welcome to ULTIMATE FLAVOR TOURNAMENT!"
-# puts
-# puts "MATCH 1: Which flavor is best?"
-# match_3[0] = ask_for_winner(match_1)
-# puts
-# puts "MATCH 2: Which flavor is best?"
-# match_3[1] = ask_for_winner(match_2)
-# puts
-# puts "CHAMPIONSHIP MATCH!"
-# puts "Which flavor is best?"
-# winner = ask_for_winner(match_3)
-# puts
-# puts "And the Ultimate Flavor Championship is:"
-# puts winner.upcase+"!!"
+match_1 = ["vanilla", "chocolate"]
+match_2 = ["rhubarb", "pistachio"]
+match_3 = [] # this will hold the winners from 1 & 2
+winner = nil # this will hold the final winner
 
-# Ch. 8 is continued in ch_8_more_flav_comp.rb, ch_8_old_roman_num.rb, and
-# ch_8_new_roman_num.rb
+def ask_for_winner(flavors)
+  puts "0. "+flavors[0]
+  puts "1. "+flavors[1]
+
+  while true
+    answer = gets.chomp.downcase
+    if (answer == "0" || answer == "1")
+      return flavors[answer.to_i]
+    else puts "Please and '0' or '1'."
+    end
+  end
+end
+
+puts "Welcome to ULTIMATE FLAVOR TOURNAMENT!"
+puts
+puts "MATCH 1: Which flavor is best?"
+match_3[0] = ask_for_winner(match_1)
+puts
+puts "MATCH 2: Which flavor is best?"
+match_3[1] = ask_for_winner(match_2)
+puts
+puts "CHAMPIONSHIP MATCH!"
+puts "Which flavor is best?"
+winner = ask_for_winner(match_3)
+puts
+puts "And the Ultimate Flavor Championship is:"
+puts winner.upcase+"!!"
+
+# Ch. 8 is continued in ch_8_more_flav_comp.rb, ch_8_old_roman_num.rb, and ch_8_new_roman_num.rb
