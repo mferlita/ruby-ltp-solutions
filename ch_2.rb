@@ -23,15 +23,13 @@ puts "2  *  5"
 puts ""
 
 puts "When Bad Things Happen to Good Programs".upcase
-=begin
-These don't work very well:
-  puts "12" + 12
-  puts "2" * "5"
-  puts "Marceline" + 12
-  puts "Finn" * "Jake"
-  puts 11 * "Apollo"
-  puts "They said, "Yes!""
-=end
+# These don't work very well:
+#   puts "12" + 12
+#   puts "2" * "5"
+#   puts "Marceline" + 12
+#   puts "Finn" * "Jake"
+#   puts 11 * "Apollo"
+#   puts "They said, "Yes!""
 puts "--Apostrophes and backslashes"
 puts "They said, \"yes!\""
 puts "up\\down"

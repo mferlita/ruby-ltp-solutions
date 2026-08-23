@@ -19,8 +19,8 @@ puts "What is your middle name?"
 m_name = gets.chomp
 puts "What is your last name?"
 l_name = gets.chomp
-puts "Did you know there are #{f_name.length + m_name.length + l_name.length} characters"
-puts "in your name, #{f_name} #{m_name} #{l_name}?"
+puts "Did you know there are #{f_name.length + m_name.length + l_name.length}"
+puts "characters in your name, #{f_name} #{m_name} #{l_name}?"
 puts ""
 
 letters = "aAbBcCdDeE"
@@ -54,14 +54,14 @@ puts ""
 # More Arithmetic
 puts 5**2 # exponentiation
 puts 5**0.5
-puts 7/3 # normal integer division
-puts 7%3 # modulus method gives remainder
-puts 365%7
+puts 7 / 3 # normal integer division
+puts 7 % 3 # modulus method gives remainder
+puts 365 % 7
 puts ""
 
 # absolute value
-puts (5-2).abs
-puts (2-5).abs
+puts (5 - 2).abs
+puts (2 - 5).abs
 puts ""
 
 # Random numbers
@@ -100,4 +100,4 @@ puts(Math.tan(Math::PI/4))
 puts(Math.log(Math::E**2))
 puts((1 + Math.sqrt(5)) / 2) # golden ratio
 # The Math object is a constant. Cannot reassign a new value to constants.
-# Variables start with lower case letters. Constants start with upper case letter.
+# Variables start with lowercase letters. Constants start with uppercase letter.

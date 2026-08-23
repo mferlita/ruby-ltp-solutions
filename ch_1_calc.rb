@@ -38,7 +38,8 @@ puts "There are #{decade_in_minutes} minutes in a decade."
 puts
 
 puts 'How many seconds old are you?'.upcase
-puts "I, Matt Ferlita, am #{me_in_seconds} seconds old, or #{me_in_years} years old."
+puts "I, Matt Ferlita, am #{me_in_seconds} seconds old,"
+puts "or #{me_in_years} years old."
 puts
 
 puts 'If I am 1,390 million seconds old, how old am I?'.upcase

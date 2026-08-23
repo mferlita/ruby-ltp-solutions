@@ -1,5 +1,7 @@
 # frozen_string_literal: false
 
+# My original attempt is commented out.
+# .0.
 # array = []
 #
 # loop do

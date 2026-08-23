@@ -49,13 +49,13 @@ puts
 end
 
 # More Array Methods
-foods = ["artichoke", "brioche", "caramel"]
+foods = %w[artichoke brioche caramel]
 
 puts foods
 puts
 puts foods.to_s
 puts
-puts foods.join(", ")
+puts foods.join(', ')
 puts
 puts foods.join(" :) ") + " 8)"
 

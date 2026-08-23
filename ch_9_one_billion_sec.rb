@@ -2,4 +2,5 @@
 
 matt = Time.new(1992, 2, 12, 2)
 matt += 1_000_000_000
-puts "Matt will have turned one billion seconds old on #{matt.strftime("%F at %r")}"
+puts "Matt will have turned one billion seconds"
+puts "old on #{matt.strftime("%F at %r")}"

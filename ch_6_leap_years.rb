@@ -1,6 +1,7 @@
 # frozen_string_literal: false
 
-# Commented out is my original program. It works fine, but there's a bit of redundancy.
+# Commented out is my original program. It works fine,
+# but there's a bit of redundancy.
 #
 # puts 'Please enter a starting year (the earliest year in the range).'
 # start_year = gets.to_i
