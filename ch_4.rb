@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-# Conversions and Input
+####### Conversions and Input #######
 var1 = 2
 var2 = "5"
 puts var1.to_s + var2
@@ -25,22 +25,22 @@ puts 3.to_i
 puts ""
 
 
-# Let Me Tell You a Secret
+####### Let Me Tell You a Secret #######
 puts 20
 puts 20.to_s
 puts "20"
 puts ""
 
 
-# Getting Strings from the User
+####### Getting Strings from the User #######
 #puts gets
 
 
-# Cleaning Up User Input
-# puts "Hello there, and what's your name?"
-# name = gets
-# puts "Your name is " + name + "?  What a lovely name!"
-# puts "Pleased to meet you, " + name + ".  :)"
+####### Cleaning Up User Input #######
+#puts "Hello there, and what's your name?"
+#name = gets
+#puts "Your name is " + name + "?  What a lovely name!"
+#puts "Pleased to meet you, " + name + ".  :)"
 
 puts "Hello there, and what's your name?"
 name = gets.chomp

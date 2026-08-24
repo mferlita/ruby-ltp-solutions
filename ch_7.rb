@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-# Some arrays
+####### Some arrays #######
 []
 [5]
 ["Hello", "Goodbye"]
@@ -26,7 +26,7 @@ other_gems[0] = "Rose Quartz"
 puts other_gems
 puts
 
-# My First Iterator
+####### My First Iterator #######
 languages = ["English", "Norwegian", "Ruby"]
 
 languages.each do |lang|
@@ -37,7 +37,7 @@ puts "And let's hear it for Fortran!"
 puts "<crickets chirp in the distance>"
 puts
 
-# integer method FTW
+####### integer method FTW #######
 3.times do
   puts "Hip-Hip-Hooray!"
 end
@@ -48,8 +48,8 @@ puts
   puts "...you can say that again..."
 end
 
-# More Array Methods
-foods = %w[artichoke brioche caramel]
+####### More Array Methods #######
+foods = ["artichoke", "brioche", "caramel"]
 
 puts foods
 puts

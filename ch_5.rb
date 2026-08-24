@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-# Fancy String Methods
+####### Fancy String Methods #######
 var1 = "stop"
 var2 = "deliver repaid desserts"
 var3 = "....TCELES B HSUP - A magic spell?"
@@ -51,7 +51,7 @@ puts ""
 
 # continued in ch_5_angry_boss.rb and ch_5_table_of_contents.rb
 
-# More Arithmetic
+####### More Arithmetic #######
 puts 5**2 # exponentiation
 puts 5**0.5
 puts 7 / 3 # normal integer division
@@ -64,7 +64,7 @@ puts (5 - 2).abs
 puts (2 - 5).abs
 puts ""
 
-# Random numbers
+####### Random numbers #######
 puts rand
 puts rand
 puts rand
@@ -92,7 +92,7 @@ puts(rand(100))
 puts(rand(100))
 puts ""
 
-# The Math Object
+######## The Math Object #######
 puts(Math::PI)
 puts(Math::E)
 puts(Math.cos(Math::PI/3))

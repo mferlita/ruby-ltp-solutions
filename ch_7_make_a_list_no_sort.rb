@@ -1,6 +1,7 @@
 # frozen_string_literal: false
 
-# My original attempt is commented out.
+####### My original attempt is commented out. #######
+
 # list = []
 # alphabetized_list = []
 #

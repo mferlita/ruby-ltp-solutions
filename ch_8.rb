@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-# flavor tournament
+####### flavor tournament #######
 match_1 = ["vanilla", "chocolate"]
 match_2 = ["rhubarb", "pistachio"]
 match_3 = [] # this will hold the winners from 1 & 2
@@ -60,7 +60,7 @@ say_moo # once...
 say_moo # twice...
 say_moo # three times a bovine
 
-# Method Arguments: What Goes In
+####### Method Arguments: What Goes In #######
 def say_moo1(number_of_moos)
   puts "mooooooo..."*number_of_moos
 end
@@ -72,7 +72,7 @@ puts "oink-oink"
 # because the argument is missing
 # say_moo
 
-# Local Variables: What's Inside
+####### Local Variables: What's Inside #######
 def double_this(num)
   num_times_2 = num*2
   puts "#{num} doubled is #{num_times_2}"
@@ -92,7 +92,7 @@ end
 little_pest(tough_var)
 puts tough_var
 
-# Return Variables: What Comes Out
+####### Return Variables: What Comes Out #######
 return_value = puts "This puts returned:"
 puts return_value
 
@@ -135,7 +135,7 @@ puts favorite_drink("Kathryn")
 puts favorite_drink("Q")
 puts favorite_drink("Jean-Luc")
 
-# Flavor Tournament Redux
+####### Flavor Tournament Redux #######
 match_1 = ["vanilla", "chocolate"]
 match_2 = ["rhubarb", "pistachio"]
 match_3 = [] # this will hold the winners from 1 & 2

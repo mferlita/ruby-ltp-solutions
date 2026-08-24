@@ -1,6 +1,7 @@
 # frozen_string_literal: false
 
-# My original attempt is commented out.
+####### My original attempt is commented out. #######
+
 # table_contents = [
 #   'Table of Contents', 'Chapter 1: Numbers', 'page 1', 'Chapter 2: Letters', 'page 2',
 #   'Chapter 3: Variables', 'page 3'
