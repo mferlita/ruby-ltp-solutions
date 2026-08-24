@@ -174,4 +174,5 @@ while true
   end
 end
 
-# Ch. 6 is continued in ch_6_99_bottles.rb and ch_6_deaf_grandma.rb
+# Ch. 6 is continued in ch_6_99_bottles.rb, ch_6_deaf_grandma.rb
+# and ch_6_leap_years.rb
