@@ -18,7 +18,8 @@ def ask_for_winner(flavors)
     answer = gets.chomp.downcase
     if (answer == "0" || answer == "1")
       return flavors[answer.to_i]
-    else puts "Please and '0' or '1'."
+    else
+      puts "Please and '0' or '1'."
     end
   end
 end
