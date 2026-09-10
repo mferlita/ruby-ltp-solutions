@@ -74,7 +74,7 @@ puts(rand(1))
 puts(rand(1))
 puts(rand(1))
 puts(rand(9_999_999_999_999_999_999_999_999_999_999_999_999))
-puts("My weather app there is a")
+puts("My weather app says there is a")
 puts("#{rand(101)}% chance of rain,")
 puts("but it's literally raining right now!")
 puts ""
