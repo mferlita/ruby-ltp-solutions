@@ -52,35 +52,35 @@ puts old_roman_num(84)
 puts
 puts old_roman_num(4)
 puts
-puts old_roman_num(1999) # From answer key. Should be MCMXCIX
+puts old_roman_num(1999) # From answer key. Should be MDCCCCLXXXXVIIII
 puts
 puts old_roman_num(1992)
 puts
 puts old_roman_num(2004)
 puts
-# The following are from Wikipedia, retrieved 9/22/26.
-puts old_roman_num(39) # Should be: XXXIX
+# The following numbers are from Wikipedia, retrieved 9/22/26.
+puts old_roman_num(39)
 puts
-puts old_roman_num(246) # CCXLVI
+puts old_roman_num(246)
 puts
-puts old_roman_num(789) # DCCLXXXIX
+puts old_roman_num(789)
 puts
-puts old_roman_num(2421) # MMCDXXI
+puts old_roman_num(2421)
 puts
-puts old_roman_num(160) # CLX
+puts old_roman_num(160)
 puts
-puts old_roman_num(207) # CCVII
+puts old_roman_num(207)
 puts
-puts old_roman_num(1009) # MIX
+puts old_roman_num(1009)
 puts
-puts old_roman_num(1066) # MLXVI
+puts old_roman_num(1066)
 puts
-puts old_roman_num(1776) # MDCCLXXVI
+puts old_roman_num(1776)
 puts
-puts old_roman_num(1918) # MCMXVIII
+puts old_roman_num(1918)
 puts
-puts old_roman_num(1944) # MCMXLIV
+puts old_roman_num(1944)
 puts
-puts old_roman_num(2026) # MMXXVI
+puts old_roman_num(2026)
 puts
-puts old_roman_num(3999) # MMMCMXCIX
+puts old_roman_num(3999)
