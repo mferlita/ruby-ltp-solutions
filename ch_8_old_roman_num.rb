@@ -2,9 +2,10 @@
 
 # To be honest I was stumped on how to do this, so I looked at the answer key.
 # After realizing what Mr. Pine was doing in the "how you could do it" solution,
-# my first thought was "Why couldn't you just parse each integer apart instead
-# of having to do all that math? So, I threw the passed number into an array and
-# just dealt with each integer based on where it was in the array.
+# my first thought was "Why couldn't you just parse each integer apart like you
+# can in ooRexx instead of having to do all that math? So, I threw the passed
+# number into an array and just dealt with each integer based on where it was in
+# the array.
 
 # I then noticed that every five numbers, the smaller numerals (I, for example)
 # would reset and new larger numerals (like V) would be introduced. To get the
