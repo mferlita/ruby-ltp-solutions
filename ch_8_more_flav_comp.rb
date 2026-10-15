@@ -13,7 +13,7 @@ def ask_for_winner(flavors)
   puts "0. " + flavors[0]
   puts "1. " + flavors[1]
 
-  while true
+  loop do
     answer = gets.chomp.downcase
     if answer == "0" || answer == "1"
       return flavors[answer.to_i]
@@ -23,7 +23,7 @@ def ask_for_winner(flavors)
   end
 end
 
-puts "Welcomne to ULTIMATE FLAVOR TOURNAMENT"
+puts "Welcome to ULTIMATE FLAVOR TOURNAMENT"
 puts
 
 puts "ROUND 1, MATCH 1: Which flavor is best?"

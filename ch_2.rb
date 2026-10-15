@@ -14,12 +14,12 @@ puts "blink " * 4
 puts ""
 
 puts "Numbers vs. Digits".upcase
-puts  12  +  12
+puts 12 + 12
 puts "12" + "12"
 puts "12  +  12"
-puts  2  *  5
-puts "2" *  5
-puts "2  *  5"
+puts 2 * 5
+puts "2" * 5
+puts "2 * 5"
 puts ""
 
 puts "When Bad Things Happen to Good Programs".upcase

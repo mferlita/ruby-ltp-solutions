@@ -9,42 +9,44 @@ winner = nil # this will hold the final winner
 puts "Welcome to ULTIMATE FLAVOR TOURNAMENT!"
 puts
 puts "MATCH 1: Which flavor is best?"
-puts "0. "+match_1[0]
-puts "1. "+match_1[1]
+puts "0. " + match_1[0]
+puts "1. " + match_1[1]
 while true
   answer = gets.chomp.downcase
-  if (answer == "0" || answer == "1")
+  if answer == "0" || answer == "1"
     match_3[0] = match_1[answer.to_i]
     break
   else
-  puts "Please answer '0' or '1'."
+    puts "Please answer '0' or '1'."
   end
 end
 
 puts
 puts "MATCH 2: Which flavor is best?"
-puts "0. "+match_2[0]
-puts "1. "+match_2[1]
-while true
+puts "0. " + match_2[0]
+puts "1. " + match_2[1]
+loop do
   answer = gets.chomp.downcase
-  if (answer == "0" || answer == "1")
+  if answer == "0" || answer == "1"
     match_3[1] = match_2[answer.to_i]
     break
-  else puts "Please answer '0' or '1'."
+  else
+    puts "Please answer '0' or '1'."
   end
 end
 
 puts
 puts "CHAMPIONSHIP MATCH!"
 puts "Which flavor is best?"
-puts "0. "+match_3[0]
-puts "1. "+match_3[1]
-while true
+puts "0. " + match_3[0]
+puts "1. " + match_3[1]
+loop do
   answer = gets.chomp.downcase
-  if (answer == "0" || answer == "1")
+  if answer == "0" || answer == "1"
     winner = match_3[answer.to_i]
     break
-  else puts "Please answer '0' or '1'."
+  else
+    puts "Please answer '0' or '1'."
   end
 end
 
@@ -62,7 +64,7 @@ say_moo # three times a bovine
 
 ####### Method Arguments: What Goes In #######
 def say_moo1(number_of_moos)
-  puts "mooooooo..."*number_of_moos
+  puts "mooooooo..." * number_of_moos
 end
 
 say_moo1(3)
@@ -74,7 +76,7 @@ puts "oink-oink"
 
 ####### Local Variables: What's Inside #######
 def double_this(num)
-  num_times_2 = num*2
+  num_times_2 = num * 2
   puts "#{num} doubled is #{num_times_2}"
 end
 double_this(44)
@@ -99,7 +101,7 @@ puts return_value
 puts say_moo1(3)
 
 def say_moo2(number_of_moos)
-  puts "mooooooo..."*number_of_moos
+  puts "mooooooo..." * number_of_moos
   "yellow submarine"
 end
 
@@ -145,7 +147,7 @@ def ask_for_winner(flavors)
   puts "0. " + flavors[0]
   puts "1. " + flavors[1]
 
-  while true
+  loop do
     answer = gets.chomp.downcase
     if answer == "0" || answer == "1"
       return flavors[answer.to_i]

@@ -33,20 +33,20 @@ puts letters
 puts ""
 
 line_width = 50
-puts(               "Old Mother Hubbard".center(line_width))
-puts(              "Sat in her cupboard".center(line_width))
-puts(       "Eating her curds and whey,".center(line_width))
-puts(         "When along came a spider".center(line_width))
-puts(          "Who sat down beside her".center(line_width))
+puts("Old Mother Hubbard".center(line_width))
+puts("Sat in her cupboard".center(line_width))
+puts("Eating her curds and whey,".center(line_width))
+puts("When along came a spider".center(line_width))
+puts("Who sat down beside her".center(line_width))
 puts("And scared her poor shoe dog away".center(line_width))
 puts ""
 
 line_width = 40
 str = "==> text <=="
-puts( str.ljust(line_width))
+puts(str.ljust(line_width))
 puts(str.center(line_width))
-puts( str.rjust(line_width))
-puts(str.ljust(line_width/2) + str.rjust(line_width/2))
+puts(str.rjust(line_width))
+puts(str.ljust(line_width / 2) + str.rjust(line_width / 2))
 puts ""
 
 # continued in ch_5_angry_boss.rb and ch_5_table_of_contents.rb
@@ -95,8 +95,8 @@ puts ""
 ######## The Math Object #######
 puts(Math::PI)
 puts(Math::E)
-puts(Math.cos(Math::PI/3))
-puts(Math.tan(Math::PI/4))
+puts(Math.cos(Math::PI / 3))
+puts(Math.tan(Math::PI / 4))
 puts(Math.log(Math::E**2))
 puts((1 + Math.sqrt(5)) / 2) # golden ratio
 # The Math object is a constant. Cannot reassign a new value to constants.

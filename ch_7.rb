@@ -11,11 +11,11 @@ flavor = "vanilla" # Not an array, of course...
 gems = ["Pearl", "Garnet", "Amethyst"]
 
 puts gems
-puts          #just a blank line
+puts          # just a blank line
 puts gems [0]
 puts gems [1]
 puts gems [2]
-puts gems [3] #This is out of range
+puts gems [3] # This is out of range
 puts
 
 other_gems = []
@@ -55,7 +55,7 @@ puts foods
 puts
 puts foods.to_s
 puts
-puts foods.join(', ')
+puts foods.join(", ")
 puts
 puts foods.join(" :) ") + " 8)"
 

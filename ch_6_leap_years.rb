@@ -21,17 +21,17 @@
 # end
 
 # Revamped
-puts 'Please enter a starting year (the earliest year in the range).'
+puts "Please enter a starting year (the earliest year in the range)."
 start_year = gets.to_i
-puts 'Please enter an ending year (the latest year in the range).'
+puts "Please enter an ending year (the latest year in the range)."
 end_year = gets.to_i
-puts 'The leap years are:'
+puts "The leap years are:"
 year = start_year
 
 while year <= end_year
   if year % 4 == 0
     if year % 100 != 0 || year % 400 == 0
-    puts year
+      puts year
     end
   end
   year += 1

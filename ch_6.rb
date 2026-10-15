@@ -97,7 +97,7 @@ puts
 
 ### Example 3 ###
 puts "loop with true object".upcase
-while true
+loop do
   input = gets.chomp
   puts input
   if input == "bye"
@@ -117,10 +117,8 @@ puts "Hello, #{name}"
 
 if name == "Chris"
   puts "What a lovely name!"
-else
-  if name == "Katy"
-    puts "What a lovely name!"
-  end
+elsif name == "Katy"
+  puts "What a lovely name!"
 end
 puts
 
@@ -158,7 +156,7 @@ puts
 
 ### Last Example ###
 puts "C Pine and Ruby Pine"
-while true
+loop do
   puts "What would you like to ask C to do?"
   request = gets.chomp
 

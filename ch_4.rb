@@ -24,17 +24,14 @@ puts "stringy".to_s
 puts 3.to_i
 puts ""
 
-
 ####### Let Me Tell You a Secret #######
 puts 20
 puts 20.to_s
 puts "20"
 puts ""
 
-
 ####### Getting Strings from the User #######
 #puts gets
-
 
 ####### Cleaning Up User Input #######
 #puts "Hello there, and what's your name?"
