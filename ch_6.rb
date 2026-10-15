@@ -63,7 +63,8 @@ puts
 
 ####### Looping #######
 ### Example 1 ###
-# This loops forever, let me out!
+## This loops forever, let me out!
+
 # input = ""
 # while input != "bye"
 #   puts input

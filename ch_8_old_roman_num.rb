@@ -1,23 +1,7 @@
 # frozen_string_literal: false
 
-# To be honest I was stumped on how to do this, so I looked at the answer key.
-# After realizing what Mr. Pine was doing in the "how you could do it" solution,
-# my first thought was "Why couldn't you just parse each integer apart like you
-# can in ooRexx instead of having to do all that math? So, I threw the passed
-# number into an array and just dealt with each integer based on where it was in
-# the array.
-
-# I then noticed that every five numbers, the smaller numerals (I, for example)
-# would reset and new larger numerals (like V) would be introduced. To get the
-# symbols to repeat the correct amount of times, I divided the digit by five for
-# the larger numeral and used the remainder to get the right amount of smaller
-# numerals.
-
-# I(1), V(5), X(10), L(50), C(100), D(500), M(1000)
-# Write a method that when passed an integer between 1 and 3000 (or so) returns
-# a string containing the proper old school numeral.
-# old_roman_numeral(4) should return IIII.
-# Integer division and modulus methods.
+# This method when passed a number between 1 and 3,999 converts it to roman
+# numerals, but without subtractive notation.
 
 # Note: Roman numerals can only go to 3,999 without additional notation.
 

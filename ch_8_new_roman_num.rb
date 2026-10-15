@@ -1,8 +1,9 @@
 # frozen_string_literal: false
 
-# For this one, everything is the same as old_roman_num except we need some
-# conditionals for the 4th and 9th numbers, which use subtractive notation
-# instead of the original additive notation. Instead of IIII, 4 is now IV.
+# This method when passed a number between 1 and 3,999 converts it to roman
+# numerals.
+
+# Note: Roman numerals can only go to 3,999 without additional notation.
 
 def new_roman_num(num)
   if num <= 0 || num >= 4_000
