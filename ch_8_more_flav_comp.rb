@@ -1,50 +1,87 @@
 # frozen_string_literal: false
 
-match_1_1 = ["vanilla", "chocolate"]
-match_1_2 = ["rhubarb", "pistachio"]
-match_1_3 = ["spumoni", "green tea"]
-match_1_4 = ["cherry", "strawberry"]
-match_2_1 = [] # winners from 1_1 and 1_2
-match_2_2 = [] # winners from 1_3 and 1_4
-match_3_1 = [] # winners from 2_1 and 2_2
-winner = nil # final winner
+flavors = [
+  "vanilla",
+  "chocolate",
+  "rhubarb",
+  "pistachio",
+  "spumoni",
+  "green tea",
+  "strawberry"
+]
 
-def ask_for_winner(flavors)
-  puts "0. " + flavors[0]
-  puts "1. " + flavors[1]
+def pair_up(array) # [1,2,3,4,5] -> [[1,2], [3,4], [5,6]]
+  array.each_slice(2).to_a
+end
+
+def ask_for_winner(match)
+  puts "1. " + match[0]
+  puts "2. " + match[1]
 
   loop do
     answer = gets.chomp.downcase
-    if answer == "0" || answer == "1"
-      return flavors[answer.to_i]
+    if answer == "1" || answer == "2"
+      return match[answer.to_i - 1]
     else
-      puts "Please answer '0' or '1'."
+      puts "Please answer '1' or '2'."
     end
   end
 end
 
-puts "Welcome to ULTIMATE FLAVOR TOURNAMENT"
-puts
+# play just one round of the tournament
+def play_round(round, round_num)
+  winners = []
 
-puts "ROUND 1, MATCH 1: Which flavor is best?"
-match_2_1[0] = ask_for_winner(match_1_1)
-puts "ROUND 1, MATCH 2: Which flavor is best?"
-match_2_1[1] = ask_for_winner(match_1_2)
-puts "ROUND 1, MATCH 3: Which flavor is best?"
-match_2_2[0] = ask_for_winner(match_1_3)
-puts "ROUND 1, MATCH 4: Which flavor is best?"
-match_2_2[1] = ask_for_winner(match_1_4)
-puts
+  round.each_with_index do |match, idx|
+    if match.length == 1
+      # We had an odd number of flavors for this round,
+      #  so this one silently advances by default.
+      winners.push(match[0])
+    else
+      match_num = idx + 1
+      puts
+      if round.length == 1
+        puts "CHAMPIONSHIP MATCH!"
+      else
+        puts "ROUND #{round_num}, MATCH #{match_num}"
+      end
+      puts "Which flavor is best?"
+      winners.push(ask_for_winner(match))
+    end
+  end
 
-puts "ROUND 2, MATCH 1: Which flavor is best?"
-match_3_1[0] = ask_for_winner(match_2_1)
-puts "ROUND 2, MATCH 2: Which flavor is best?"
-match_3_1[1] = ask_for_winner(match_2_2)
-puts
+  winners
+end
 
-puts "CHAMPIONSHIP MATCH!"
-puts "Which flavor is best?"
-winner = ask_for_winner(match_3_1)
-puts
-puts "And the Ultimate Flavor Champion is:"
-puts winner.upcase + "!!"
+# "round" will be an array of arrays of matches:
+# rounds = [
+# [match_1, match_2, ...], # round 1
+# [match_1, match_2, ...], # round 2
+# ...
+# ]
+# each match is an array of two flavors
+rounds = []
+
+# populate "rounds" with Round 1 matches
+rounds.push(pair_up(flavors))
+round_idx = 0
+
+
+puts "Welcome to ULTIMATE FLAVOR TOURNAMENT!"
+
+# each pass of this loop is a new round
+loop do
+  winners = play_round(rounds[round_idx], round_idx + 1)
+
+  if winners.length >= 2
+    # prepare for next round
+    rounds.push(pair_up(winners))
+    round_idx += 1
+  else
+    # We have a winner!
+    puts
+    puts "And the Ultimate Flavor Champion is:"
+    puts winners[0].upcase + "!!"
+    break
+  end
+end
