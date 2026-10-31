@@ -4,14 +4,12 @@
 # The filename doesn't have to end with ".txt"
 # but since it is valid, why not?
 filename = "ListerQuote.txt"
-test_string = "I promise that I swear absolutately that " \
+test_string = "I promise that I swear absolutely that " \
   "I will never mention gazpacho soup again."
 
 # The "w" here is for write access to the file
 # since we are trying to write to it.
-File.open(filename, "w") do |f|
-  f.write(test_string)
-end
+File.write(filename, test_string)
 
 read_string = File.read(filename)
 
@@ -31,9 +29,7 @@ test_string = test_array.to_json
 
 filename = "RimmerTShirts.txt"
 
-File.open(filename, "w") do |f|
-  f.write(test_string)
-end
+File.write(filename, test_string)
 
 read_string = File.read(filename)
 
@@ -46,9 +42,7 @@ puts read_array == test_array
 ##### Back to Our Regularly Scheduled Programming #####
 # First define these fancy methods...
 def json_save(object, filename)
-  File.open(filename, "w") do |f|
-    f.write(object.to_json)
-  end
+  File.write(filename, object.to_json)
 end
 
 def json_load(filename)
@@ -71,7 +65,7 @@ read_array = json_load(filename) # we load it...
 puts read_array == test_array # we verify it.
 
 ##### Renaming Photos #####
-# Let's go to the directory where we ant our photos to be.
+# Let's go to the directory where we want our photos to be.
 Dir.chdir("/home/matt/Photos/Holidays")
 
 # First we find all of the photos to be moved.
